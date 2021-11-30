@@ -1,0 +1,51 @@
+@import './src/styles/helpers';
+
+$modal-mobile-width: 80%;
+$modal-mobile-height: 80%;
+$modal-max-width: 40%;
+$modal-max-height: 40%;
+$modal-width: 600px;
+$modal-close-icon-size: 2rem;
+$modal-close-icon-offset: $gutter;
+
+.modal-wrapper {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, $opacity-1);
+}
+
+.modal {
+  margin: $gutter * 5 auto;
+  padding: $gutter;
+  background: $white-1;
+  position: relative;
+  max-width: $modal-mobile-width;
+  max-height: $modal-mobile-height;
+  width: $modal-width;
+
+  @include tabletMin {
+    max-width: $modal-max-width;
+    max-height: $modal-max-height;
+    padding: $gutter * 5;
+  }
+}
+
+.modal__close {
+  @extend %button-as-link;
+  position: absolute;
+  top: $modal-close-icon-offset;
+  right: $modal-close-icon-offset;
+  font-size: $modal-close-icon-size;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal__content {
+  height: 100%;
+  max-height: 100%;
+  overflow: auto;
+}

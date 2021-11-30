@@ -3,3 +3,28 @@
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+
+%link-as-button {
+  background: $grey-2;
+  padding: $gutter;
+  color: $white-1;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+
+  &:hover {
+    background: $grey-3;
+  }
+}
+
+%button-as-link {
+  background: none;
+  border: none;
+  color: $grey-2;
+  line-height: 1;
+  padding: 0;
+
+  &:hover {
+    color: $grey-3;
+  }
+}

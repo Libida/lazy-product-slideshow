@@ -1,0 +1,44 @@
+@import './src/styles/helpers';
+
+.product-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @include tabletMin {
+    flex-wrap: nowrap;
+  }
+}
+
+.product-details__info {
+  @include tabletMin {
+    margin-left: $gutter;
+  }
+}
+
+.product-details__img-wrapper {
+  @include tabletMin {
+    width: 40%;
+    min-height: 130px;
+  }
+}
+
+.product-details__link {
+  @extend %link-as-button;
+}
+
+.product-details__title {
+  font-weight: bold;
+}
+
+.product-details__price,
+.product-details__brand,
+.product-details__link,
+.product-details__discount-price,
+.product-details__title {
+  @extend %regular-text;
+
+  & + & {
+    margin-top: $gutter-half;
+  }
+}
