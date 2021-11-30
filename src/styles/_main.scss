@@ -1,0 +1,17 @@
+@import 'helpers';
+
+.page-body {
+  font-size: 62.5%;
+  font-family: sans-serif;
+  background-color: $grey-1;
+  margin: 0;
+}
+
+.main {
+  margin: $gutter;
+
+  @include desktop {
+    max-width: 990px;
+    margin: $gutter-tripled auto;
+  }
+}

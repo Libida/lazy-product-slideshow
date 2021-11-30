@@ -1,0 +1,40 @@
+@import './src/styles/helpers';
+
+$img-ratio: 9 / 16;
+$title-offset: 6px;
+
+.product-tile {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.product-tile-inner {
+  display: block;
+  position: relative;
+  padding-top: $img-ratio * 100%;
+  overflow: hidden;
+  background-color: $white-1;
+}
+
+.product-tile__img-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.product-tile__title {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin: 0;
+  padding: $title-offset;
+  max-width: calc(100% - #{$title-offset * 2});
+  color: $white-1;
+  text-shadow: $text-shadow;
+
+  @extend %text-overflow;
+}
+
+

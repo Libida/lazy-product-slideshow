@@ -1,0 +1,48 @@
+@import './src/styles/helpers';
+
+$tile-offset: $gutter;
+$tile-offset-half: $gutter / 2;
+
+.product-tile-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  @include desktop {
+    margin: 0 -$tile-offset-half;
+  }
+
+  .product-tile {
+    width: 100%;
+    padding-top: $tile-offset;
+
+    &:first-child {
+      padding-top: 0;
+    }
+
+    @include tablet {
+      width: 50%;
+
+      &:nth-child(2) {
+        padding-top: 0;
+      }
+
+      &:nth-child(odd) {
+        padding-right: $tile-offset-half;
+      }
+
+      &:nth-child(even) {
+        padding-left: $tile-offset-half;
+      }
+    }
+
+    @include desktop {
+      width: 25%;
+      padding-right: $tile-offset-half;
+      padding-left: $tile-offset-half;
+
+      &:nth-child(2), &:nth-child(3), &:nth-child(4) {
+        padding-top: 0;
+      }
+    }
+  }
+}

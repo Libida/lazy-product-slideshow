@@ -1,0 +1,14 @@
+@import './src/styles/helpers';
+
+.header {
+  display: flex;
+
+  .header__link {
+    margin: 0 auto;
+    padding-top: $gutter;
+
+    @include desktop {
+      padding-top: $gutter-tripled;
+    }
+  }
+}
