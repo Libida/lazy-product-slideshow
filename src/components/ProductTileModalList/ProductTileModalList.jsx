@@ -3,7 +3,11 @@ import React from 'react';
 import './ProductTileModalList.scss';
 import { ProductTileWithModal } from '../ProductTileWithModal';
 
-const ProductTileModalList = ({ productList }) => {
+const ProductTileModalList = ({ productList = [] }) => {
+  if (!productList?.length) {
+    return null;
+  }
+
   const render = () => {
     return productList.map((productProps) => {
       const { url, price, brand } = productProps;
