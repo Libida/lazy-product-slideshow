@@ -1,5 +1,5 @@
 import { Header } from './components/Header';
-import { ProductTileListSlideshow } from './components/ProductTileListSlideshow';
+import { ProductSlideshow } from './components/ProductSlideshow';
 
 import '../src/styles/styles.scss';
 
@@ -8,7 +8,7 @@ export default function App() {
     <>
       <Header/>
       <main className="main">
-        <ProductTileListSlideshow/>
+        <ProductSlideshow/>
       </main>
     </>
   );

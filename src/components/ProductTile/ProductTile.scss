@@ -1,13 +1,14 @@
 @import './src/styles/helpers';
 
 $img-ratio: 9 / 16;
-$title-offset: 6px;
+$title-offset: $gutter-half;
 
 .product-tile {
   margin: 0;
   padding: 0;
   border: 0;
   cursor: pointer;
+  animation: append-animate $duration-2 linear;
 }
 
 .product-tile-inner {
@@ -33,9 +34,16 @@ $title-offset: 6px;
   padding: $title-offset;
   max-width: calc(100% - #{$title-offset * 2});
   color: $white-1;
-  text-shadow: $text-shadow;
+  text-shadow: $text-shadow-1;
+  box-shadow: $box-shadow-2;
+  transition: all 0.4s ease-in-out 0s;
 
   @extend %text-overflow;
+  @extend %heading-1;
+
+  .product-tile:hover & {
+    box-shadow: $box-shadow-1;
+  }
 }
 
 

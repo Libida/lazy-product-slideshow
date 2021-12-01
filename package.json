@@ -6,8 +6,8 @@
   "dependencies": {
     "classnames": "^2.3.1",
     "enzyme": "^3.11.0",
-    "react": "^18.0.0-beta-0cc724c77-20211125",
-    "react-dom": "^18.0.0-beta-0cc724c77-20211125",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
     "react-scripts": "4.0.0",
     "sass": "1.43.4"
   },

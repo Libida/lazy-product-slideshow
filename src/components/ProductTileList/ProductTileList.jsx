@@ -1,9 +1,9 @@
 import React from 'react';
 
-import './ProductTileModalList.scss';
+import './ProductTileList.scss';
 import { ProductTileWithModal } from '../ProductTileWithModal';
 
-const ProductTileModalList = ({ productList = [] }) => {
+export const ProductTileList = ({ productList = [] }) => {
   if (!productList?.length) {
     return null;
   }
@@ -22,5 +22,3 @@ const ProductTileModalList = ({ productList = [] }) => {
     <div className="product-tile-list">{render()}</div>
   );
 };
-
-export default ProductTileModalList;

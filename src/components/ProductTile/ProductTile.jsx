@@ -4,7 +4,6 @@ import { ProductImage } from '../ProductImage';
 import './ProductTile.scss';
 
 const ProductTile = ({ title, image, imageone, handleClick, children }) => {
-
   return (
     <button className="product-tile" onClick={handleClick}>
       <span className="product-tile-inner">

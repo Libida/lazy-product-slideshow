@@ -39,9 +39,14 @@ $tile-offset-half: $gutter / 2;
       width: 25%;
       padding-right: $tile-offset-half;
       padding-left: $tile-offset-half;
+      transition: all 0.4s ease-in-out 0s;
 
       &:nth-child(2), &:nth-child(3), &:nth-child(4) {
         padding-top: 0;
+      }
+
+      &:hover {
+        transform: scale(1.04);
       }
     }
   }

@@ -1,7 +1,6 @@
 import React from 'react';
 
 import { Image } from '../Image';
-import './ProductImage.scss';
 
 const ProductImage = ({ image, imageone, ...otherProps }) => {
   const imgSrc = image || imageone;

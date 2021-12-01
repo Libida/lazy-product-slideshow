@@ -1,6 +1,4 @@
-import React, { useState, useCallback, useEffect } from 'react';
-
-import './ProductTileWithModal.scss';
+import React, { useState } from 'react';
 
 import { ProductTile } from '../ProductTile';
 import { Modal } from '../Modal';

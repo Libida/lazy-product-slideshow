@@ -11,6 +11,7 @@
   text-decoration: none;
   display: block;
   text-align: center;
+  transition: $duration-1;
 
   &:hover {
     background: $grey-3;
@@ -23,8 +24,20 @@
   color: $grey-2;
   line-height: 1;
   padding: 0;
+  transition: $duration-1;
 
   &:hover {
     color: $grey-3;
+  }
+}
+
+@keyframes append-animate {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
   }
 }

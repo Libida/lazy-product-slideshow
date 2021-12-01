@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductTile should render correctly for default initial props 1`] = `
+<button
+  className="product-tile"
+  onClick={[MockFunction]}
+>
+  <span
+    className="product-tile-inner"
+  >
+    <ProductImage
+      alternativeText="product title"
+      image="image src"
+      imgClassname="product-tile__img"
+      wrapperClassname="product-tile__img-wrapper"
+    />
+    <h3
+      className="product-tile__title"
+    >
+      product title
+    </h3>
+  </span>
+</button>
+`;
+
+exports[`ProductTile should render correctly with children 1`] = `
+<button
+  className="product-tile"
+  onClick={[MockFunction]}
+>
+  <span
+    className="product-tile-inner"
+  >
+    <ProductImage
+      alternativeText="product title"
+      image="image src"
+      imgClassname="product-tile__img"
+      wrapperClassname="product-tile__img-wrapper"
+    />
+    <h3
+      className="product-tile__title"
+    >
+      product title
+    </h3>
+  </span>
+  <div>
+    Children component
+  </div>
+</button>
+`;
